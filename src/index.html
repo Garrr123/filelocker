@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Encryption/Decryption</title>
+</head>
+<body>
+
+<h2>Encrypt a Folder (.zip)</h2>
+<form action="/encrypt/" method="post" enctype="multipart/form-data">
+    <label for="password">Enter Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    <input type="file" name="file" accept=".zip" required><br><br>
+    <input type="submit" value="Encrypt Folder">
+</form>
+
+<h2>Decrypt a Folder (.zip)</h2>
+<form action="/decrypt/" method="post" enctype="multipart/form-data">
+    <label for="password">Enter Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    <input type="file" name="file" accept=".zip" required><br><br>
+    <input type="submit" value="Decrypt Folder">
+</form>
+
+</body>
+</html>
